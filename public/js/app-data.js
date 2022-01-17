@@ -99,6 +99,15 @@ $(document).ready(function() {
          daysOfWeekHighlighted: "0,6",
          orientation: "bottom",
      });
+     $(".tanggal-sebelumnya").datepicker({
+          language: "id",
+          format: "dd-mm-yyyy",
+          autoclose: true,
+          endDate: "d",
+          todayHighlight: true,
+          daysOfWeekHighlighted: "0,6",
+          orientation: "bottom",
+     });
 	$(".bulan-umum").datepicker({
 	     language: "id",
 	     format: "mm-yyyy",

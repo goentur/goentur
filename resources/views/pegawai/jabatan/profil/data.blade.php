@@ -135,7 +135,6 @@
                                                        </div>
                                                        <button type="submit" class="btn btn-primary btn-lg waves-effect waves-light"><i class="mdi mdi-content-save"></i> <span>SIMPAN</span></button>
                                                   </form>
-
                                              </div>
                                         </div>
                                    </div>
@@ -144,37 +143,79 @@
                                    <div class="col-lg-8 col-12">
                                         <div class="card card-default card-fill">
                                              <div class="card-header bg-primary">
-                                                  <h3 class="card-title text-white">Edit Profile</h3>
+                                                  <h3 class="card-title text-white"><i class="mdi mdi-account-edit-outline"></i> EDIT PROFIL</h3>
                                              </div>
                                              <div class="card-body border border-primary">
-                                                  <form>
-                                                       <div class="form-group">
-                                                       <label for="FullName">Full Name</label>
-                                                       <input type="text" value="John Doe" id="FullName" class="form-control">
+                                                  <form method="post" class="row" action="javascript:void(0)">
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="nip">NIP</label>
+                                                                 <input type="number" disabled required placeholder="Masukan NIP" id="nip" name="nip" class="form-control form-control-lg">
+                                                            </div>
                                                        </div>
-                                                       <div class="form-group">
-                                                       <label for="Email">Email</label>
-                                                       <input type="email" value="first.last@example.com" id="Email" class="form-control">
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="pin_absen">PIN ABSEN</label>
+                                                                 <input type="number" disabled required placeholder="Masukan pin absen" id="pin_absen" name="pin_absen" class="form-control form-control-lg">
+                                                            </div>
                                                        </div>
-                                                       <div class="form-group">
-                                                       <label for="Username">Username</label>
-                                                       <input type="text" value="john" id="Username" class="form-control">
+                                                       <div class="col-lg-12 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="gelar_depan">NAMA PEGAWAI</label>
+                                                                 <div class="row">
+                                                                      <div class="col-lg-3 col-12">
+                                                                           <input type="text" autocomplete="off" required placeholder="Masukan gelar depan" id="gelar_depan" name="gelar_depan" class="form-control form-control-lg">
+                                                                      </div>
+                                                                      <div class="col-lg-6 col-12">
+                                                                           <input type="text" autocomplete="off" required placeholder="Masukan nama" id="nama" name="nama" class="form-control form-control-lg">
+                                                                      </div>
+                                                                      <div class="col-lg-3 col-12">
+                                                                           <input type="text" autocomplete="off" required placeholder="Masukan gelar belakang" id="gelar_belakang" name="gelar_belakang" class="form-control form-control-lg">
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
                                                        </div>
-                                                       <div class="form-group">
-                                                       <label for="Data Diri">Data Diri</label>
-                                                       <input type="Data Diri" placeholder="6 - 15 Characters" id="Data Diri" class="form-control">
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="email">EMAIL</label>
+                                                                 <input type="email" required disabled placeholder="Masukan email" id="email" name="email" class="form-control form-control-lg">
+                                                            </div>
                                                        </div>
-                                                       <div class="form-group">
-                                                       <label for="ReData Diri">Re-Data Diri</label>
-                                                       <input type="Data Diri" placeholder="6 - 15 Characters" id="ReData Diri" class="form-control">
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="jenis_kelamin">JENIS KELAMIN</label><br>
+                                                                 <div class="radio radio-info form-check-inline">
+                                                                      <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="checked">
+                                                                      <label for="inlineRadio1"> Inline One </label>
+                                                                 </div>
+                                                                 <div class="radio form-check-inline">
+                                                                      <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                                      <label for="inlineRadio2"> Inline Two </label>
+                                                                 </div>
+                                                            </div>
                                                        </div>
-                                                       <div class="form-group">
-                                                       <label for="AboutMe">About Me</label>
-                                                       <textarea style="height: 125px" id="AboutMe" class="form-control">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</textarea>
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="tempat_lahir">TEMPAT LAHIR</label>
+                                                                 <input type="text" autocomplete="off" required placeholder="Masukan tempat lahir" id="tempat_lahir" name="tempat_lahir" class="form-control form-control-lg">
+                                                            </div>
                                                        </div>
-                                                       <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Save</button>
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="tanggal_lahir">TANGGAL LAHIR</label>
+                                                                 <input type="text" autocomplete="off" required placeholder="Masukan tanggal lahir" id="tanggal_lahir" name="tanggal_lahir" class="form-control form-control-lg tanggal-sebelumnya">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="form-group">
+                                                                 <label for="pin_absen">PIN ABSEN</label>
+                                                                 <input type="number" disabled required placeholder="Masukan pin absen" id="pin_absen" name="pin_absen" class="form-control form-control-lg">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary btn-lg waves-effect waves-light"><i class="mdi mdi-content-save"></i> <span>SIMPAN</span></button>
+                                                       </div>
                                                   </form>
-
                                              </div>
                                         </div>
                                    </div>
