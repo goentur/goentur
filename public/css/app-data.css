@@ -1,0 +1,21 @@
+body::-webkit-scrollbar       {background-color:rgba(255, 255, 255, 0.0);width:8px}
+body::-webkit-scrollbar-track {background-color:rgba(255, 255, 255, 0.0)}
+body::-webkit-scrollbar-thumb {background-color:#317eeb}
+.table-sm td {
+    vertical-align: middle;
+}
+.table-sm td.top {
+    vertical-align: top;
+}
+button[disabled] {
+    cursor: not-allowed;
+}
+input[disabled] {
+    cursor: not-allowed;
+}
+input[type='radio']:disabled {
+    cursor: not-allowed;
+}
+input[type='checkbox']:disabled {
+    cursor: not-allowed;
+}
