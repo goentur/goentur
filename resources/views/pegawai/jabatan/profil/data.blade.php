@@ -228,6 +228,5 @@
         </div>
 </div>
 @endsection
-
 @push('javascript')
 @endpush
